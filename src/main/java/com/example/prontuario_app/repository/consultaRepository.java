@@ -8,4 +8,6 @@ public interface consultaRepository extends JpaRepository<consulta, Long> {
 
     List<consulta> findByPacienteId(Long pacienteId);
 
+    void deleteByPacienteId(Long pacienteId);
+    
 }
